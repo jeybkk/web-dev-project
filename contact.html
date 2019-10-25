@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4dd272e088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact-Me</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="index.html" id="logo" class="navbar-brand">
+                <span class="logo-color"><i class="fas fa-laptop-code fa-2x"></i> Port</span>folio</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="contact-header">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 m-auto text-center">
+                    <h1 class="display-3"><span class="is-custom-blue">C</span>ontact</h1>
+                    <p class="lead d-none d-md-block">Find more about on how to get in touch with me by filling up a simple form.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact section -->
+
+    <section id="contact" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h4><span class="is-custom-blue">Contact Me</span></h4>
+                            <p>Stamford International University Address:</p>
+                            <h4><span class="is-custom-blue">Address</span></h4>
+                            <p>Stamford University, Prawet Bangkok</p>
+                            <h4><span class="is-custom-blue">Email</span></h4>
+                            <p>170703012@students.stamford.edu</p>
+                            <h4><span class="is-custom-blue">Phone Number</span></h4>
+                            <p>(+66)2 769 4000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h3 class="text-center">Please Fill Out This Form To Contact Me</h3>
+                            <hr class="mb-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Submit" class="btn btn-info btn-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="has-blue-border mb-0">
+        <div id="map"></div>
+    
+
+
+
+    <!-- Footer -->
+    <footer id="main-footer" class="text-center p-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; <span id="year"></span> Jeremy Poulain</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Source for google map javascript -->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            
+            var loc = { lat: 13.753960, lng: 100.502240 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: loc
+            });
+            
+            var marker = new google.maps.Marker({ position: loc, map: map });
+        }
+    </script>
+
+    <!-- Google Map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-HUMHGteerreSPADOhg2-5nLLdrApawA&callback=initMap"
+        async defer></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+
+
+    </script>
+
+
+
+</body>
+
+</html>

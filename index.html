@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4dd272e088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Index</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="index.html" id="logo" class="navbar-brand">
+                <span class="logo-color"><i class="fas fa-laptop-code fa-2x"></i> Port</span>folio</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase Carousel -->
+    <section id="showcase">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="container">
+                        <div class="carousel-caption  text-right mb-5">
+                            <h1 class="display-3">Learn About Me</h1>
+                            <p class="lead d-none d-sm-block">Learn more about me and my competences in Web Develoment and IT in general.</p>
+                            <a href="about.html" class="btn btn-danger btn-lg">About Me!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-image-2 ">
+                    <div class="container">
+                        <div class="carousel-caption mb-5">
+                            <h1 class="display-3">See My Resumé</h1>
+                            <p class="lead d-none d-sm-block">Get to see the details of my carreer path and why you should hire me to develop your website.</p>
+                            <a href="resume.html" class="btn btn-primary btn-lg">Learn More!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-image-3 ">
+                    <div class="container">
+                        <div class="carousel-caption text-right mb-5">
+                            <h1 class="display-3">Contact Me</h1>
+                            <p class="lead d-none d-sm-block">Find all my contact information and fill up the form to contact me.</p>
+                            <a href="contact.html" class="btn btn-success btn-lg">Contact Me Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Home Icon Section -->
+    <section id="home-icons" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-keyboard fa-3x mb-2"></i>
+                    <h3>Code Your Website</h3>
+                    <p>I code your website from scratch using the latest HTML5 CSS and Javascript technologies.</p>
+
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-desktop fa-3x mb-2"></i>
+                    <h3>Design Your Website</h3>
+                    <p>Design is important and having beautiful and fully responsive website is the key to success.</p>
+
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-cloud fa-3x mb-2"></i>
+                    <h3>Host It Online</h3>
+                    <p>Using the best hosting services provider I make sure that your website be hosted on the fastest servers.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Heading Section -->
+    <section id="home-heading" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <h1>Let's Get Ready And Create Your Website</h1>
+                        <p class="lead d-none d-md-block mt-5">By contacting me you will ensure to receive the best quality in matter of web design and web hosting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="py-3">
+        <div class="container">
+            
+                <div class="col ">
+                    <img src="img/laptop-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col  align-self-center">
+                    <h3 class="text-center">Learn more about me</h3>
+                    <p class="text-center">Please take a look at my profile and get to know my IT expertise in Web Development.</p>
+                        <div class="col text-center my-4">
+                    <a href="about.html" class="btn btn-primary btn-lg ">Learn More</a>
+                </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- Video Play -->
+    <section id="video-play">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container p-5">
+                        <a href="#" class="video" data-video="https://www.youtube.com/embed/EqwtBc2TjZs"
+                            data-toggle="modal" data-target="#videoModal">
+                        <h1 class="video-title">Improve Your Business</h1>
+                        <i class="fas fa-play fa-3x pt-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h1 class="text-center">Websites Gallery</h1>
+            <p class="text-center">See some examples of my websites and projects:</p>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <a href="./img/screen.png" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="563" data-width="563">
+                        <img src="./img/screen.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="./img/gms.png" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="561" data-width="561">
+                        <img src="./img/gms.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="./img/hotel.png" data-toggle="lightbox"
+                        data-gallery="img-gallery" data-height="562" data-width="562">
+                        <img src="./img/hotel.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+            
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <a href="./img/hotel-about.png" data-toggle="lightbox"
+                            data-gallery="img-gallery" data-height="563" data-width="563">
+                            <img src="./img/hotel-about.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="./img/social.png" data-toggle="lightbox"
+                            data-gallery="img-gallery" data-height="564" data-width="564">
+                            <img src="./img/social.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="./img/social-2.png" data-toggle="lightbox"
+                            data-gallery="img-gallery" data-height="565" data-width="565">
+                            <img src="./img/social-2.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="text-center p-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Sign Up For Newsletter</h1>
+                    <p>Subsribe to the newsletter and be informed about the latest news regarding Web Development!
+                        <form class="form-inline justify-content-center">
+                            <input type="text" class="form-control mb-2 mr-4 " placeholder="Enter Name">
+                            <input type="text" class="form-control mb-2 mr-4 " placeholder="Enter Email">
+                            <button class="btn btn-primary mb-2" data-toggle="modal" data-target="#myModal">Submit</button>
+                        </form>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal Title</h5>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+            Congratulation! You Are Now Subscribed!
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="text-center p-2">
+        <div class="container">
+            <div class="rom">
+                <div class="col">
+                    <p>&copy; <span id="year"></span> Jeremy Poulain</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+        integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+
+    <script>
+
+
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+
+        // Configure Slider
+        $('carousel').carousel({
+            interval: 6000,
+            pause: 'hover'
+        });
+
+        // Lightbox Init
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+        // Video Play
+        $(function () {
+
+            // Auto play modal video
+            $(".video").click(function () {
+                var theModal = $(this).data("target"),
+                    videoSRC = $(this).attr("data-video"),
+                    videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+                $(theModal + ' iframe').attr('src', videoSRCauto);
+                $(theModal + ' button.close').click(function () {
+                    $(theModal + ' iframe').attr('src', videoSRC);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
